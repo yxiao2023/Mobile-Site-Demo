@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <title>黑马面面</title>
+</head>
+
+<body>
+
+    <section class="wrap">
+        <header class="header">黑马面面</header>
+        <nav>
+            <a href="#"><img src="./icons/icon1.png"><span>HR面试</span></a>
+            <a href="#"><img src="./icons/icon1.png"><span>HR面试</span></a>
+            <a href="#"><img src="./icons/icon1.png"><span>HR面试</span></a>
+            <a href="#"><img src="./icons/icon1.png"><span>HR面试</span></a>
+            <a href="#"><img src="./icons/icon1.png"><span>HR面试</span></a>
+            <a href="#"><img src="./icons/icon1.png"><span>HR面试</span></a>
+        </nav>
+        <section class="go">
+            <img src="./images/go.png" />
+        </section>
+    </section>
+    <section class="content">
+        <div class="content-hd">
+            <h4><span class="icon"><img src="./icons/i2.png" /></span>
+                就业指导</h4>
+            <a href="#" class="more">更多<< </a>
+        </div>
+        <div class="job-go">
+            <div class="swiper-container get_job_fo">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/pic.png"></a>
+                        <p>技巧</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/ldh.jpg"></a>
+                        <p>技巧</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/3.jpg"></a>
+                        <p>技巧</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+        <div class="content-hd">
+            <h4><span class="icon"><img src="./icons/i2.png" /></span>
+                充电学习</h4>
+            <a href="#" class="more">更多<< </a>
+        </div>
+        <div class="study">
+            <div class="swiper-container study-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/pic1.png"></a>
+                        <h5>外语学习</h5>
+                        <p>156人学习</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/pic1.png"></a>
+                        <h5>外语学习</h5>
+                        <p>156人学习</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/pic1.png"></a>
+                        <h5>外语学习</h5>
+                        <p>156人学习</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/pic1.png"></a>
+                        <h5>外语学习</h5>
+                        <p>156人学习</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <a href="#"><img src="./icons/home.png">
+            <p>首页</p>
+        </a>
+        <a href="#"><img src="./icons/ms.png">
+            <p>模拟面试</p>
+        </a>
+        <a href="#"><img src="./icons/net.png">
+            <p>技术面试</p>
+        </a>
+        <a href="#"><img src="./icons/user.png">
+            <p>我的主页</p>
+        </a>
+    </footer>
+    <script src="./js/flexible.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script>
+        (function () {
+            var swiper = new Swiper('.get_job_fo', {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                centeredSlides: true,
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        })();
+        (function () {
+            var swiper = new Swiper('.study-container', {
+                slidesPerView: 2.2,
+                spaceBetween: 20,
+
+            });
+        })();
+    </script>
+</body>
+
+</html>
